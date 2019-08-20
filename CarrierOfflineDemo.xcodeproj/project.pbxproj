@@ -28,8 +28,6 @@
 		114C307F2290137400767C4E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 114C307B2290137400767C4E /* LICENSE */; };
 		114C30802290137400767C4E /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 114C307D2290137400767C4E /* README.mdown */; };
 		114C30822290169900767C4E /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114C30812290169800767C4E /* ScanViewController.xib */; };
-		11F221422303C4610007A3A7 /* ElastosCarrierSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F221402303C4550007A3A7 /* ElastosCarrierSDK.framework */; };
-		11F221432303C4610007A3A7 /* ElastosCarrierSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11F221402303C4550007A3A7 /* ElastosCarrierSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11F221452303C90C0007A3A7 /* InviteToGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F221442303C90C0007A3A7 /* InviteToGroupViewController.swift */; };
 		11F221472303CA0B0007A3A7 /* Hive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F221462303CA0B0007A3A7 /* Hive.swift */; };
 		11F221492303CA940007A3A7 /* InviteToGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F221482303CA940007A3A7 /* InviteToGroupCell.swift */; };
@@ -62,7 +60,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				11F221432303C4610007A3A7 /* ElastosCarrierSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +93,6 @@
 		114C307C2290137400767C4E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		114C307D2290137400767C4E /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		114C30812290169800767C4E /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
-		11F221402303C4550007A3A7 /* ElastosCarrierSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElastosCarrierSDK.framework; sourceTree = "<group>"; };
 		11F221442303C90C0007A3A7 /* InviteToGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteToGroupViewController.swift; sourceTree = "<group>"; };
 		11F221462303CA0B0007A3A7 /* Hive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hive.swift; sourceTree = "<group>"; };
 		11F221482303CA940007A3A7 /* InviteToGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteToGroupCell.swift; sourceTree = "<group>"; };
@@ -129,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F221422303C4610007A3A7 /* ElastosCarrierSDK.framework in Frameworks */,
 				9D0EBFD41E58C535344C5847 /* Pods_CarrierOfflineDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +319,6 @@
 		19515A9C6C6A88729BCD2607 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11F221402303C4550007A3A7 /* ElastosCarrierSDK.framework */,
 				1E981B0CB5C9F2E79FE56FE4 /* Pods_CarrierOfflineDemo.framework */,
 			);
 			name = Frameworks;
@@ -579,6 +573,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 arm64e";
 			};
 			name = Debug;
 		};
@@ -634,6 +629,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e";
 			};
 			name = Release;
 		};
@@ -645,7 +641,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T4LVNDN76A;
+				DEVELOPMENT_TEAM = XGJ9J7DHP5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -673,7 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T4LVNDN76A;
+				DEVELOPMENT_TEAM = XGJ9J7DHP5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
