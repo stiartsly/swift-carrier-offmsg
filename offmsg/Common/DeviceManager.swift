@@ -33,7 +33,7 @@ class DeviceManager : NSObject {
     var carrierGroup: CarrierGroup?
 
     override init() {
-        Carrier.setLogLevel(.Debug)
+//        Carrier.setLogLevel(.Debug)
     }
 
     func start() {

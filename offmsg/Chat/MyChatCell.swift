@@ -1,6 +1,6 @@
 //
 //  MyChatCell.swift
-//  CarrierOfflineDemo
+//  offmsg
 //
 //  Created by 李爱红 on 2019/5/19.
 //  Copyright © 2019 李爱红. All rights reserved.

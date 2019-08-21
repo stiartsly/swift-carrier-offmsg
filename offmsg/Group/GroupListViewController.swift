@@ -1,6 +1,6 @@
 //
 //  GroupListViewController.swift
-//  CarrierOfflineDemo
+//  offmsg
 //
 //  Created by 李爱红 on 2019/8/12.
 //  Copyright © 2019 李爱红. All rights reserved.

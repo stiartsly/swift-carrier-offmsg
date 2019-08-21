@@ -1,7 +1,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ScanViewController.h"
 #import "MBProgressHUD.h"
-#import "CarrierOfflineDemo-Swift.h"
+#import "offmsg-Swift.h"
 
 @interface ScanViewController () <AVCaptureMetadataOutputObjectsDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {

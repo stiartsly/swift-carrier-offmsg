@@ -1,6 +1,6 @@
 //
 //  InviteToGroupCell.swift
-//  CarrierOfflineDemo
+//  offmsg
 //
 //  Created by 李爱红 on 2019/8/14.
 //  Copyright © 2019 李爱红. All rights reserved.

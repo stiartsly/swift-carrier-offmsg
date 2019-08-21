@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CarrierOfflineDemo
+//  offmsg
 //
 //  Created by 李爱红 on 2019/5/15.
 //  Copyright © 2019 李爱红. All rights reserved.

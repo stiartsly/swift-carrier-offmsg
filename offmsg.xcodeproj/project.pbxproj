@@ -50,7 +50,7 @@
 		11FD24BA2291077C00C564F6 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD24A92291077C00C564F6 /* IQUITextFieldView+Additions.swift */; };
 		11FD24BB2291077C00C564F6 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD24AA2291077C00C564F6 /* IQUIView+Hierarchy.swift */; };
 		11FD24BC2291077C00C564F6 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD24AB2291077C00C564F6 /* IQNSArray+Sort.swift */; };
-		9D0EBFD41E58C535344C5847 /* Pods_CarrierOfflineDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981B0CB5C9F2E79FE56FE4 /* Pods_CarrierOfflineDemo.framework */; };
+		9D0EBFD41E58C535344C5847 /* Pods_offmsg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1119708E228C5BB400BA38E0 /* CarrierOfflineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrierOfflineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1119708E228C5BB400BA38E0 /* offmsg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = offmsg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11197091228C5BB400BA38E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11197093228C5BB400BA38E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11197096228C5BB400BA38E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		114C306E2290045400767C4E /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		114C30702290059F00767C4E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		114C30722290060300767C4E /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
-		114C30742290133000767C4E /* CarrierOfflineDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarrierOfflineDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		114C30742290133000767C4E /* offmsg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "offmsg-Bridging-Header.h"; sourceTree = "<group>"; };
 		114C30752290133000767C4E /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		114C30762290133100767C4E /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		114C307A2290137400767C4E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -115,9 +115,9 @@
 		11FD24A92291077C00C564F6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		11FD24AA2291077C00C564F6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		11FD24AB2291077C00C564F6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
-		1E981B0CB5C9F2E79FE56FE4 /* Pods_CarrierOfflineDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarrierOfflineDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFAC2FDB0A88D7C4E3F891D3 /* Pods-CarrierOfflineDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrierOfflineDemo.debug.xcconfig"; path = "Target Support Files/Pods-CarrierOfflineDemo/Pods-CarrierOfflineDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D9F3B315141C2362E4D6A4F8 /* Pods-CarrierOfflineDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrierOfflineDemo.release.xcconfig"; path = "Target Support Files/Pods-CarrierOfflineDemo/Pods-CarrierOfflineDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_offmsg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAC2FDB0A88D7C4E3F891D3 /* Pods-offmsg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offmsg.debug.xcconfig"; path = "Target Support Files/Pods-offmsg/Pods-offmsg.debug.xcconfig"; sourceTree = "<group>"; };
+		D9F3B315141C2362E4D6A4F8 /* Pods-offmsg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offmsg.release.xcconfig"; path = "Target Support Files/Pods-offmsg/Pods-offmsg.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0EBFD41E58C535344C5847 /* Pods_CarrierOfflineDemo.framework in Frameworks */,
+				9D0EBFD41E58C535344C5847 /* Pods_offmsg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 		11197085228C5BB400BA38E0 = {
 			isa = PBXGroup;
 			children = (
-				11197090228C5BB400BA38E0 /* CarrierOfflineDemo */,
+				11197090228C5BB400BA38E0 /* offmsg */,
 				1119708F228C5BB400BA38E0 /* Products */,
 				6EE29A0200F8209BA4422743 /* Pods */,
 				19515A9C6C6A88729BCD2607 /* Frameworks */,
@@ -145,12 +145,12 @@
 		1119708F228C5BB400BA38E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1119708E228C5BB400BA38E0 /* CarrierOfflineDemo.app */,
+				1119708E228C5BB400BA38E0 /* offmsg.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11197090228C5BB400BA38E0 /* CarrierOfflineDemo */ = {
+		11197090228C5BB400BA38E0 /* offmsg */ = {
 			isa = PBXGroup;
 			children = (
 				114C30782290136B00767C4E /* 3rd */,
@@ -164,9 +164,9 @@
 				11197098228C5BBA00BA38E0 /* Assets.xcassets */,
 				1119709A228C5BBA00BA38E0 /* LaunchScreen.storyboard */,
 				1119709D228C5BBA00BA38E0 /* Info.plist */,
-				114C30742290133000767C4E /* CarrierOfflineDemo-Bridging-Header.h */,
+				114C30742290133000767C4E /* offmsg-Bridging-Header.h */,
 			);
-			path = CarrierOfflineDemo;
+			path = offmsg;
 			sourceTree = "<group>";
 		};
 		111970A9228C606600BA38E0 /* Chat */ = {
@@ -319,7 +319,7 @@
 		19515A9C6C6A88729BCD2607 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E981B0CB5C9F2E79FE56FE4 /* Pods_CarrierOfflineDemo.framework */,
+				1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,8 +327,8 @@
 		6EE29A0200F8209BA4422743 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BFAC2FDB0A88D7C4E3F891D3 /* Pods-CarrierOfflineDemo.debug.xcconfig */,
-				D9F3B315141C2362E4D6A4F8 /* Pods-CarrierOfflineDemo.release.xcconfig */,
+				BFAC2FDB0A88D7C4E3F891D3 /* Pods-offmsg.debug.xcconfig */,
+				D9F3B315141C2362E4D6A4F8 /* Pods-offmsg.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -336,9 +336,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1119708D228C5BB400BA38E0 /* CarrierOfflineDemo */ = {
+		1119708D228C5BB400BA38E0 /* offmsg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 111970A0228C5BBA00BA38E0 /* Build configuration list for PBXNativeTarget "CarrierOfflineDemo" */;
+			buildConfigurationList = 111970A0228C5BBA00BA38E0 /* Build configuration list for PBXNativeTarget "offmsg" */;
 			buildPhases = (
 				EAF3CE45FD7F02468B2F1A10 /* [CP] Check Pods Manifest.lock */,
 				1119708A228C5BB400BA38E0 /* Sources */,
@@ -351,9 +351,9 @@
 			);
 			dependencies = (
 			);
-			name = CarrierOfflineDemo;
-			productName = CarrierOfflineDemo;
-			productReference = 1119708E228C5BB400BA38E0 /* CarrierOfflineDemo.app */;
+			name = offmsg;
+			productName = offmsg;
+			productReference = 1119708E228C5BB400BA38E0 /* offmsg.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -372,7 +372,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11197089228C5BB400BA38E0 /* Build configuration list for PBXProject "CarrierOfflineDemo" */;
+			buildConfigurationList = 11197089228C5BB400BA38E0 /* Build configuration list for PBXProject "offmsg" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -385,7 +385,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1119708D228C5BB400BA38E0 /* CarrierOfflineDemo */,
+				1119708D228C5BB400BA38E0 /* offmsg */,
 			);
 		};
 /* End PBXProject section */
@@ -414,15 +414,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarrierOfflineDemo/Pods-CarrierOfflineDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-offmsg/Pods-offmsg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarrierOfflineDemo/Pods-CarrierOfflineDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-offmsg/Pods-offmsg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarrierOfflineDemo/Pods-CarrierOfflineDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-offmsg/Pods-offmsg-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EAF3CE45FD7F02468B2F1A10 /* [CP] Check Pods Manifest.lock */ = {
@@ -440,7 +440,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CarrierOfflineDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-offmsg-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -635,26 +635,26 @@
 		};
 		111970A1228C5BBA00BA38E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFAC2FDB0A88D7C4E3F891D3 /* Pods-CarrierOfflineDemo.debug.xcconfig */;
+			baseConfigurationReference = BFAC2FDB0A88D7C4E3F891D3 /* Pods-offmsg.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XGJ9J7DHP5;
+				DEVELOPMENT_TEAM = T4LVNDN76A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CarrierOfflineDemo/Info.plist;
+				INFOPLIST_FILE = offmsg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = elastos.CarrierOfflineDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = elastos.offmsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CarrierOfflineDemo/CarrierOfflineDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "offmsg/offmsg-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,26 +663,26 @@
 		};
 		111970A2228C5BBA00BA38E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9F3B315141C2362E4D6A4F8 /* Pods-CarrierOfflineDemo.release.xcconfig */;
+			baseConfigurationReference = D9F3B315141C2362E4D6A4F8 /* Pods-offmsg.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XGJ9J7DHP5;
+				DEVELOPMENT_TEAM = T4LVNDN76A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CarrierOfflineDemo/Info.plist;
+				INFOPLIST_FILE = offmsg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = elastos.CarrierOfflineDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = elastos.offmsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CarrierOfflineDemo/CarrierOfflineDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "offmsg/offmsg-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -691,7 +691,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11197089228C5BB400BA38E0 /* Build configuration list for PBXProject "CarrierOfflineDemo" */ = {
+		11197089228C5BB400BA38E0 /* Build configuration list for PBXProject "offmsg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1119709E228C5BBA00BA38E0 /* Debug */,
@@ -700,7 +700,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		111970A0228C5BBA00BA38E0 /* Build configuration list for PBXNativeTarget "CarrierOfflineDemo" */ = {
+		111970A0228C5BBA00BA38E0 /* Build configuration list for PBXNativeTarget "offmsg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				111970A1228C5BBA00BA38E0 /* Debug */,
