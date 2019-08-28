@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import ElastosCarrierSDK
 import QRCode
 
 class MyInfoViewController: UIViewController {

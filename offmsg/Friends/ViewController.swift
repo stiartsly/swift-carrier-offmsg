@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import SnapKit
-import ElastosCarrierSDK
 import WMPageController
 
 class ViewController: WMPageController {

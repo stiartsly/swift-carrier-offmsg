@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ElastosCarrierSDK
 
 class GroupChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var mainTableView: UITableView!

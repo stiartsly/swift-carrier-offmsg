@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ElastosCarrierSDK
 
 class CarrierChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 

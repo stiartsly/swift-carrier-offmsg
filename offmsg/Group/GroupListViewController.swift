@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ElastosCarrierSDK
 
 class GroupListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CarrierGroupDelegate {
     var mainTableView: UITableView!

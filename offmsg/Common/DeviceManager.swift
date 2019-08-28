@@ -1,7 +1,6 @@
 import Foundation
 import AVFoundation
 import MediaPlayer
-import ElastosCarrierSDK
 
 extension Notification.Name {
     static let selfInfoChanged = Notification.Name("didReceiveData")
@@ -265,12 +264,10 @@ extension DeviceManager : CarrierDelegate
         print("friendRemoved, userId : \(friendId)")
 
     }
-    
-    public func didReceiveFriendMessage(_ carrier: Carrier,
-                                        _ from: String,
-                                        _ message: Data) {
-        print("didReceiveFriendMessage : \(message)")
-        let msgStr = String(data: message, encoding: .utf8)
+
+    func didReceiveFriendMessage(_ carrier: Carrier, _ from: String, _ data: Data, _ isOffline: Bool) {
+        print("didReceiveFriendMessage : \(data)")
+        let msgStr = String(data: data, encoding: .utf8)
         let messageInfo = ["userId": from, "msg": msgStr]
         NotificationCenter.default.post(name: .didReceiveFriendMessage, object: self, userInfo: ["messageInfo": messageInfo])
     }
@@ -284,7 +281,6 @@ extension DeviceManager : CarrierDelegate
 }
 
 // MARK: - GroupDelegate
-
 extension DeviceManager: CarrierGroupDelegate {
 
     func groupDidConnect(_ group: CarrierGroup) {

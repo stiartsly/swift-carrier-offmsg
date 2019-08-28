@@ -12,41 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-//
-//     func creatUI() -> WMPageController {
-//        let viewsitem = [ FrientListViewController().classForCoder,GroupListViewController().classForCoder]
-//        let viewsTitle=["好友", "群组"]
-//
-//        let pageVC  =  WMPageController(viewControllerClasses: viewsitem, andTheirTitles: viewsTitle)
-//
-//        pageVC.title="offMsg"
-//        pageVC.menuItemWidth = 85   //每个 MenuItem 的宽度
-//        //        pageVC.menuHeight = 50    //导航栏高度
-//        pageVC.postNotification = true  //
-//        pageVC.bounces = true
-//        pageVC.titleSizeSelected = 13    //选中时的标题尺寸
-//        pageVC.titleSizeNormal = 14      //非选中时的标题尺寸
-//        //        pageVC.menuViewStyle = .line    //Menu view 的样式，默认为无下划线
-//        pageVC.titleColorSelected = UIColor.red    //标题选中时的颜色, 颜色是可动画的.
-//        pageVC.titleColorNormal = UIColor.black    //标题非选择时的颜色, 颜色是可动画的
-//        //        pageVC.menuBGColor = UIColor.white        //导航栏背景色
-//        return pageVC
-//    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         IQKeyboardManager.shared.shouldShowToolbarPlaceholder = true
         IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "send"
         IQKeyboardManager.shared.enableAutoToolbar = true
         IQKeyboardManager.shared.toolbarManageBehaviour = .byPosition
-
-//        let page = creatUI()
-//        let naviCV = UINavigationController(rootViewController: page)
-//        self.window?.rootViewController = naviCV
-//        self.window?.makeKeyAndVisible()
-
         return true
     }
 

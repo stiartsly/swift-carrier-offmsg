@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import SnapKit
-import ElastosCarrierSDK
 
 enum handleFriendType {
     case handleFriendTypeInfoChange
@@ -44,7 +42,6 @@ class FrientListViewController: UIViewController,UITableViewDelegate,UITableView
         NotificationCenter.default.addObserver(self, selector: #selector(handleFriendAdded(notif:)), name: .friendAdded, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleDidReceiveFriendMessage(notif:)), name: .didReceiveFriendMessage, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleAlready(notif:)), name: Notification.Name("already"), object: nil)
-
         DeviceManager.sharedInstance.start()
         configData()
         creatTableView()

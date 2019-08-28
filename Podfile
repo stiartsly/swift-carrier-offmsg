@@ -8,6 +8,6 @@ target 'offmsg' do
       pod 'SnapKit', '~> 4.0.0'
       pod 'QRCode', '~> 2.0'
       pod 'WMPageController'
-      pod 'ElastosCarrierSDK', '5.3.4'
+      pod 'ElastosCarrierSDK', '5.4.0'
 
 end

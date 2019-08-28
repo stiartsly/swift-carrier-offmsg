@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD0D48C4C6F5A1B26652E2A /* Pods_offmsg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */; };
 		11197092228C5BB400BA38E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11197091228C5BB400BA38E0 /* AppDelegate.swift */; };
 		11197094228C5BB400BA38E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11197093228C5BB400BA38E0 /* ViewController.swift */; };
 		11197097228C5BB400BA38E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11197095228C5BB400BA38E0 /* Main.storyboard */; };
@@ -50,7 +51,6 @@
 		11FD24BA2291077C00C564F6 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD24A92291077C00C564F6 /* IQUITextFieldView+Additions.swift */; };
 		11FD24BB2291077C00C564F6 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD24AA2291077C00C564F6 /* IQUIView+Hierarchy.swift */; };
 		11FD24BC2291077C00C564F6 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD24AB2291077C00C564F6 /* IQNSArray+Sort.swift */; };
-		9D0EBFD41E58C535344C5847 /* Pods_offmsg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0EBFD41E58C535344C5847 /* Pods_offmsg.framework in Frameworks */,
+				0CD0D48C4C6F5A1B26652E2A /* Pods_offmsg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +637,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFAC2FDB0A88D7C4E3F891D3 /* Pods-offmsg.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -665,7 +664,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9F3B315141C2362E4D6A4F8 /* Pods-offmsg.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
