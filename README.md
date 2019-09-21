@@ -1,5 +1,6 @@
-# swift-carrier-offmsg
-This app as a demo shows the offline messaging function and is used for verification as well.
+Carrier Offline Messaging Demo
+============================
+This is the repository of app demo to show or verify that the feature of offline messaging work correctly or not for Carrier Swift SDK.
 
 ## How to build
 
@@ -11,10 +12,20 @@ $ cd offmsg
 $ pod install
 $ open CarrierOfflineDemo.xcworkspace
 ```
+Now, you can open this project with **Xcode** and then build this project and install it to your device or simulator as well.
 
-Then use **Xcode** to make compilation
+## References of Carrier SDKs
+
+Here is the list of repositories of Carrier SDKs you might be interested in:
+
+- [Elastos.NET.Carrier.Native.SDK](https://github.com/elastos/Elastos.NET.Carrier.Native.SDK.git)
+- [Elastos.NET.Carrier.Swift.SDK](https://github.com/elastos/Elastos.NET.Carrier.Swift.SDK.git)
 
 ## License
 
-MIT
+MIT@elastos-trinity.io
+
+
+
+
 
