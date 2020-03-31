@@ -58,7 +58,7 @@ class GroupListViewController: UIViewController, UITableViewDelegate, UITableVie
     //MARK: - func
     func getGroups() {
         do {
-            self.dataSource = try (Carrier.sharedInstance()?.getGroups())!
+            self.dataSource = try DeviceManager.sharedInstance.carrierInst.getGroups()
             self.mainTableView.reloadData()
         } catch {
             print(error)

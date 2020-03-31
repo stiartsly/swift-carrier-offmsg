@@ -122,11 +122,10 @@ class DeviceManager : NSObject {
                 options.udpEnabled = true
                 options.persistentLocation = carrierDirectory
 
-                try Carrier.initializeSharedInstance(options: options, delegate: self)
+                carrierInst = try Carrier.createInstance(options: options, delegate: self)
                 print("carrier instance created")
 
                 networkManager = nil
-                carrierInst = Carrier.sharedInstance()
 
                 try! carrierInst.start(iterateInterval: 1000)
 
@@ -144,7 +143,7 @@ class DeviceManager : NSObject {
     func creatCarrierGroup() {
         do {
             if carrierInst.isReady() {
-                self.carrierGroup = try carrierInst.createGroup(withDelegate: self)
+                self.carrierGroup = try carrierInst.createGroup()
                 NotificationCenter.default.post(name: .didcreatGroupSuccee, object: nil)
                 print("======= Create carrierGroup success",carrierGroup as Any)
             }
@@ -185,7 +184,8 @@ extension DeviceManager : CarrierDelegate
             try? carrier.setSelfUserInfo(myInfo)
         }
 
-        try? _ = CarrierSessionManager.initializeSharedInstance(carrier: carrier, sessionRequestHandler: { (carrier, frome, sdp) in
+        try? _ = CarrierSessionManager.createInstance(carrier: carrier, sessionRequestHandler: { (carrier, frome, sdp) in
+            
         })
     }
     
