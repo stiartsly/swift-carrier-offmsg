@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CD0D48C4C6F5A1B26652E2A /* Pods_offmsg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */; };
 		11197092228C5BB400BA38E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11197091228C5BB400BA38E0 /* AppDelegate.swift */; };
 		11197094228C5BB400BA38E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11197093228C5BB400BA38E0 /* ViewController.swift */; };
 		11197097228C5BB400BA38E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11197095228C5BB400BA38E0 /* Main.storyboard */; };
@@ -29,6 +28,7 @@
 		114C307F2290137400767C4E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 114C307B2290137400767C4E /* LICENSE */; };
 		114C30802290137400767C4E /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 114C307D2290137400767C4E /* README.mdown */; };
 		114C30822290169900767C4E /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114C30812290169800767C4E /* ScanViewController.xib */; };
+		118B6F4F2480AAFD00E0950F /* Pods_offmsg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981B0CB5C9F2E79FE56FE4 /* Pods_offmsg.framework */; };
 		11F221452303C90C0007A3A7 /* InviteToGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F221442303C90C0007A3A7 /* InviteToGroupViewController.swift */; };
 		11F221472303CA0B0007A3A7 /* Hive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F221462303CA0B0007A3A7 /* Hive.swift */; };
 		11F221492303CA940007A3A7 /* InviteToGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F221482303CA940007A3A7 /* InviteToGroupCell.swift */; };
@@ -54,7 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		111970B3228C6A3600BA38E0 /* Embed Frameworks */ = {
+		118B6F532480AB7000E0950F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CD0D48C4C6F5A1B26652E2A /* Pods_offmsg.framework in Frameworks */,
+				118B6F4F2480AAFD00E0950F /* Pods_offmsg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +345,7 @@
 				1119708B228C5BB400BA38E0 /* Frameworks */,
 				1119708C228C5BB400BA38E0 /* Resources */,
 				BA420E4C0D6E462ACAA65866 /* [CP] Embed Pods Frameworks */,
-				111970B3228C6A3600BA38E0 /* Embed Frameworks */,
+				118B6F532480AB7000E0950F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -644,6 +644,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/offmsg/3rd",
 				);
 				INFOPLIST_FILE = offmsg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -671,6 +672,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/offmsg/3rd",
 				);
 				INFOPLIST_FILE = offmsg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

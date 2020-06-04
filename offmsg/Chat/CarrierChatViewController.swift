@@ -117,24 +117,6 @@ class CarrierChatViewController: UIViewController, UITableViewDelegate, UITableV
         })
     }
 
-    //    @objc func sendFileAction() {
-    //        print("sendFileAction: <<<<<<<<<<<<<<<<<<<<")
-    //        do {
-    //            if currentState != .Connected {
-    //                let info = CarrierFileTransferInfo()
-    //                info.fileName = "test.txt"
-    //                info.fileSize = 10
-    //                let fileId: String = try CarrierFileTransfer.generateFileid()
-    //                info.fileId = fileId
-    //                try sfileTransfer = transferManager.createFileTransfer(to: friendId!, withFileInfo: info, delegate: self)
-    //                currentState = CarrierFileTransferConnectionState.Initialized
-    //                try sfileTransfer?.sendConnectionRequest()
-    //            }
-    //        } catch {
-    //            print(error)
-    //        }
-    //    }
-
     @objc func handleDidReceiveFriendMessage(notif: NSNotification) {
         let friend = notif.userInfo!["messageInfo"] as! Dictionary<String, Any>
         if ((friend["userId"] as! String) == self.friendId) {
@@ -159,7 +141,12 @@ class CarrierChatViewController: UIViewController, UITableViewDelegate, UITableV
 
     func sendMsg(_ userId: String, msg: String) {
         do {
-            try DeviceManager.sharedInstance.carrierInst.sendFriendMessage(to: userId, withMessage: msg)
+            // 方法保留
+//            try DeviceManager.sharedInstance.carrierInst.sendFriendMessage(to: userId, withMessage: msg)
+            try DeviceManager.sharedInstance.carrierInst.sendMessageWithReceipt(to: userId, withMessage: msg, responseHandler: { (uid, stat) in
+                print(uid)
+                print(stat)
+            })
             let chatInfo = MessageInfo()
             chatInfo.isMy = true
             chatInfo.message = msg

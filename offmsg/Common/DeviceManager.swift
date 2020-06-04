@@ -66,7 +66,7 @@ class DeviceManager : NSObject {
 
                 let options = CarrierOptions()
                 options.bootstrapNodes = [BootstrapNode]()
-                options.hivebootstrapNodes = [HiveBootstrapNode]()
+                options.expressNodes = [ExpressNode]()
 
                 let bootstrapNode = BootstrapNode()
                 bootstrapNode.ipv4 = "13.58.208.50"
@@ -94,39 +94,31 @@ class DeviceManager : NSObject {
                 bootstrapNode.publicKey = "3khtxZo89SBScAMaHhTvD68pPHiKxgZT6hTCSZZVgNEm"
                 options.bootstrapNodes?.append(bootstrapNode)
 
-                let hivebootstrapNode0 = HiveBootstrapNode()
-                hivebootstrapNode0.ipv4 = "52.83.159.189"
-                hivebootstrapNode0.port = "9095"
-                options.hivebootstrapNodes?.append(hivebootstrapNode0)
+                let hivebootstrapNode0 = ExpressNode()
+                hivebootstrapNode0.ipv4 = "ece00.trinity-tech.io"
+                hivebootstrapNode0.publicKey = "FyTt6cgnoN1eAMfmTRJCaX2UoN6ojAgCimQEbv1bruy9"
+                hivebootstrapNode0.port = "443"
+                options.expressNodes?.append(hivebootstrapNode0)
 
-                let hivebootstrapNode1 = HiveBootstrapNode()
-                hivebootstrapNode1.ipv4 = "52.83.119.110"
-                hivebootstrapNode1.port = "9095"
-                options.hivebootstrapNodes?.append(hivebootstrapNode1)
+                let hivebootstrapNode1 = ExpressNode()
+                hivebootstrapNode1.ipv4 = "ece01.trinity-tech.io"
+                hivebootstrapNode1.publicKey = "FyTt6cgnoN1eAMfmTRJCaX2UoN6ojAgCimQEbv1bruy9"
+                hivebootstrapNode1.port = "443"
+                options.expressNodes?.append(hivebootstrapNode1)
 
-                let hivebootstrapNode2 = HiveBootstrapNode()
-                hivebootstrapNode2.ipv4 = "3.16.202.140"
-                hivebootstrapNode2.port = "9095"
-                options.hivebootstrapNodes?.append(hivebootstrapNode2)
-
-                let hivebootstrapNode3 = HiveBootstrapNode()
-                hivebootstrapNode3.ipv4 = "18.219.53.133"
-                hivebootstrapNode3.port = "9095"
-                options.hivebootstrapNodes?.append(hivebootstrapNode3)
-
-                let hivebootstrapNode4 = HiveBootstrapNode()
-                hivebootstrapNode4.ipv4 = "18.217.147.205"
-                hivebootstrapNode4.port = "9095"
-                options.hivebootstrapNodes?.append(hivebootstrapNode4)
+                let hivebootstrapNode2 = ExpressNode()
+                hivebootstrapNode2.ipv4 = "ece01.trinity-tech.cn"
+                hivebootstrapNode2.publicKey = "FyTt6cgnoN1eAMfmTRJCaX2UoN6ojAgCimQEbv1bruy9"
+                hivebootstrapNode2.port = "33445"
+                options.expressNodes?.append(hivebootstrapNode2)
 
                 options.udpEnabled = true
                 options.persistentLocation = carrierDirectory
 
-                try Carrier.initializeSharedInstance(options: options, delegate: self)
+                carrierInst = try Carrier.createInstance(options: options, delegate: self)
                 print("carrier instance created")
 
                 networkManager = nil
-                carrierInst = Carrier.sharedInstance()
 
                 try! carrierInst.start(iterateInterval: 1000)
 
@@ -144,7 +136,7 @@ class DeviceManager : NSObject {
     func creatCarrierGroup() {
         do {
             if carrierInst.isReady() {
-                self.carrierGroup = try carrierInst.createGroup(withDelegate: self)
+                self.carrierGroup = try carrierInst.createGroup()
                 NotificationCenter.default.post(name: .didcreatGroupSuccee, object: nil)
                 print("======= Create carrierGroup success",carrierGroup as Any)
             }
@@ -155,15 +147,6 @@ class DeviceManager : NSObject {
             print(error)
         }
     }
-
-    //    func handle(carrier: Carrier, from: String, info: CarrierFileTransferInfo) {
-    //        do {
-    ////            try fileTransfer = DeviceManager.sharedInstance.transferManager.createFileTransfer(to: from, withFileInfo: info, delegate: self)
-    ////            try fileTransfer?.acceptConnectionRequest()
-    //        } catch {
-    //        }
-    //    }
-
 }
 
 // MARK: - CarrierDelegate
@@ -185,7 +168,8 @@ extension DeviceManager : CarrierDelegate
             try? carrier.setSelfUserInfo(myInfo)
         }
 
-        try? _ = CarrierSessionManager.initializeSharedInstance(carrier: carrier, sessionRequestHandler: { (carrier, frome, sdp) in
+        try? _ = CarrierSessionManager.createInstance(carrier: carrier, sessionRequestHandler: { (carrier, frome, sdp) in
+            
         })
     }
     
@@ -265,13 +249,24 @@ extension DeviceManager : CarrierDelegate
 
     }
 
+    func didReceiveFriendMessage(_ carrier: Carrier, _ from: String, _ data: Data, _ timestamp: Date, _ isOffline: Bool) {
+        print("didReceiveFriendMessage : \(data)")
+        let msgStr = String(data: data, encoding: .utf8)
+        let messageInfo = ["userId": from, "msg": msgStr]
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let time = dateformatter.string(from: timestamp)
+
+        NotificationCenter.default.post(name: .didReceiveFriendMessage, object: self, userInfo: ["messageInfo": messageInfo])
+    }
+/*
     func didReceiveFriendMessage(_ carrier: Carrier, _ from: String, _ data: Data, _ isOffline: Bool) {
         print("didReceiveFriendMessage : \(data)")
         let msgStr = String(data: data, encoding: .utf8)
         let messageInfo = ["userId": from, "msg": msgStr]
         NotificationCenter.default.post(name: .didReceiveFriendMessage, object: self, userInfo: ["messageInfo": messageInfo])
     }
-    
+    */
     public func didReceiveFriendInviteRequest(_ carrier: Carrier,
                                               _ from: String,
                                               _ data: String) {
