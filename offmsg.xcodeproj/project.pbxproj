@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		110E49252498CF7B0031E5CB /* ElastosCarrierSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110E49232498CF750031E5CB /* ElastosCarrierSDK.framework */; };
-		110E49262498CF7B0031E5CB /* ElastosCarrierSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 110E49232498CF750031E5CB /* ElastosCarrierSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11197092228C5BB400BA38E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11197091228C5BB400BA38E0 /* AppDelegate.swift */; };
 		11197094228C5BB400BA38E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11197093228C5BB400BA38E0 /* ViewController.swift */; };
 		11197097228C5BB400BA38E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11197095228C5BB400BA38E0 /* Main.storyboard */; };
@@ -62,7 +60,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				110E49262498CF7B0031E5CB /* ElastosCarrierSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +67,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		110E49232498CF750031E5CB /* ElastosCarrierSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElastosCarrierSDK.framework; sourceTree = "<group>"; };
 		1119708E228C5BB400BA38E0 /* offmsg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = offmsg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11197091228C5BB400BA38E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11197093228C5BB400BA38E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110E49252498CF7B0031E5CB /* ElastosCarrierSDK.framework in Frameworks */,
 				118B6F4F2480AAFD00E0950F /* Pods_offmsg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +195,6 @@
 		114C30782290136B00767C4E /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
-				110E49232498CF750031E5CB /* ElastosCarrierSDK.framework */,
 				11FD24952291077C00C564F6 /* IQKeyboardManagerSwift */,
 				114C30842290170700767C4E /* NetworkReachability */,
 				114C3083229016F600767C4E /* Scan */,
