@@ -141,9 +141,7 @@ class CarrierChatViewController: UIViewController, UITableViewDelegate, UITableV
 
     func sendMsg(_ userId: String, msg: String) {
         do {
-            // 方法保留
-//            try DeviceManager.sharedInstance.carrierInst.sendFriendMessage(to: userId, withMessage: msg)
-            try DeviceManager.sharedInstance.carrierInst.sendMessageWithReceipt(to: userId, withMessage: msg, responseHandler: { (uid, stat) in
+            let msgind: UInt32 = try DeviceManager.sharedInstance.carrierInst.sendFriendMessage(to: userId, withMessage: msg, responseHandler: { (uid, stat) in
                 print(uid)
                 print(stat)
             })
